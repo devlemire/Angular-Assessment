@@ -2,7 +2,8 @@
 
     <!--Product Image-->
     <a class="product-grid__product">
-        <img src={{product.image}} class="product-grid__img"  sizes="(min-width: 960px) 33vw, (min-width: 769px) 50vw, 100vw" alt="">
+        <img ng-click="toggleImage()" ng-show="showImage" src={{product.image}} class="product-grid__img"  sizes="(min-width: 960px) 33vw, (min-width: 769px) 50vw, 100vw" alt="">
+        <a ng-click="toggleImage()" ng-show="showLink">Show Image</a>
     </a>
 
     <!--Product Meta-->
