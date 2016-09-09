@@ -3,11 +3,11 @@ angular
   .service('mainSrvc', function($http) {
 
     this.getProducts = function() {
-      return $http.get('https://practiceapi.devmounta.in/products')
+      return $http.get('http://practiceapi.devmounta.in/products')
     }
 
     this.getProduct = function(id) {
-      return $http.get('https://practiceapi.devmounta.in/products/' + id)
+      return $http.get('http://practiceapi.devmounta.in/products/' + id)
     }
 
   })
